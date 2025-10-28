@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 정렬 레이아웃</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column; 
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .box {
+            margin: 8px;
+            padding: 20px;
+            color: white;
+            border: 1px solid black;
+            border-radius: 8px;
+            
+            display: flex;
+            
+            font-size: 1.2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+            
+            flex: 1; 
+        }
+
+        .top-box {
+            background-color: #5cdeff; 
+        }
+
+        .middle-box {
+            background-color: #50E3C2;
+        }
+
+        .bottom-box {
+            background-color: #e2774a;
+        }
+
+        .horizontal-left {
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .horizontal-center {
+            justify-content: center;
+            align-items: center;
+        }
+        .horizontal-right {
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .vertical-top {
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .vertical-center {
+            align-items: center;
+            justify-content: center;
+        }
+        .vertical-bottom {
+            align-items: flex-end;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box top-box vertical-top">
+            Top Center Align
+        </div>
+        
+        <div class="box middle-box horizontal-center">
+            Middle Center Align
+        </div>
+        
+        <div class="box bottom-box vertical-bottom">
+            Bottom Center Align
+        </div>
+        
+    </div>
+</body>
+</html>
