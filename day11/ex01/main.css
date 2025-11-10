@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    background-color: blue;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'Galmuri11';
+
+    flex-direction: column; /*일렬*/
+    align-items: center; /*글씨 가운데 배치*/
+
+    height: 100vh;
+    justify-content: center;
+}
+@font-face {
+    font-family: 'Galmuri11';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/Galmuri11-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+.big-text {
+    font-size: 64px;
+}
+.middle-text {
+    font-size: 32px;
+}
