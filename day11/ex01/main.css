@@ -24,3 +24,16 @@ body {
 .middle-text {
     font-size: 32px;
 }
+.small-text {
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.copyright-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    top: auto; 
+    right: auto;
+}
